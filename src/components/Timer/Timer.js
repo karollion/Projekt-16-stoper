@@ -7,7 +7,7 @@ const Timer = ({time}) => {
   }
   
   function convertMsToTime(milliseconds) {
-    let milis = parseInt((milliseconds%1000)/100);
+    let milis = milliseconds%1000;
     let seconds = Math.floor(milliseconds / 1000);
     let minutes = Math.floor(seconds / 60);
     let hours = Math.floor(minutes / 60);
